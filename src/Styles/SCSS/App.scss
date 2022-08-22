@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+//Global Color Scheme
+$react-blue: #282c34;
+$white: white;
+$black: black;
+
+
+
+.App {
+  text-align: center;
+  background-color: $react-blue;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: Start;
+  color: white;
+  padding: 40px 20px 30px 20px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+header {
+  font-family: 'Aboreto', cursive;
+  font-size: 40px;
+}
+
+.heading {
+  z-index: 1;
+}
+
+@media (max-width: 400px) {
+  .heading {
+    font-size: calc(20px + 2vmin);
+  }
+  
+  .App {
+    padding: 15px 7px 20px 7px;
+  }
+}
+
+
+.App-link {
+  color: #61dafb;
+}
