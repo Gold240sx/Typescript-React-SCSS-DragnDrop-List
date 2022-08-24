@@ -17,7 +17,8 @@ const App: React.FC = () => {
 
   const handleAdd = (e: React.FormEvent) => {
     e.preventDefault();
-
+    if (!todo.length) return
+    
     setTodos([...todos, { id: Date.now(), todo, isDone:false}])
     setTodo('');
   }
@@ -60,6 +61,7 @@ const App: React.FC = () => {
         <button className="back-button">Back</button>
         <header className="App-header">
           <span className="heading">Taskify</span>
+          <h2 className="txt-left grey subheader">A Drag and Drop CRUD App Excercise...</h2>
           <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
         </header>
         <TodoList 

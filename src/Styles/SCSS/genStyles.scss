@@ -5,6 +5,8 @@
     width: 95%;
     position: relative;
     align-items: center;
+    margin-inline: auto;
+    // margin-right: 10px;
 }
 
 .input__box {
@@ -51,7 +53,7 @@
 
 .container {
     display: flex;
-    width: 95vw;
+    width: 95%;
     margin-top: 10px;
     justify-content: space-evenly;
 }
@@ -95,10 +97,13 @@
     border: none;
     font-size:  20px;
     text-align: left;
+    // margin-right: 10px;
+    border-radius: 5px;
 }
 
 .todos__single--text:focus {
     outline: none;
+    background-color: rgba(255, 255, 255, 0.513);
 }
 
 .icon {
@@ -111,8 +116,40 @@
     color: white;
 }
 
+.hint {
+    position: absolute;
+    right: 30px;
+    font-size: 18px;
+    top:24px
+}
+
+.hint:hover {
+    color:black;
+}
+
 .remove {
     background-color: $red;
+}
+
+.txt-left {
+    text-align: start;
+    width: 100%;
+    padding-left: 5%;
+}
+
+.grey {
+    color: grey;
+}
+
+.subheader {
+    font-weight: 400;
+    margin-bottom: 0px;
+    font-size: 18px;
+    text-transform: lowercase !important;
+}
+
+.hidden {
+    display: none;
 }
 
 @media (max-width: 700px) {
@@ -132,8 +169,10 @@
         width: 95%;
     }
     .todos {
-        width: 95% !important;
+        min-width: 95%;
+        max-width: 95vw;
         margin-bottom: 10px;
+        margin-inline: auto;
     }
 
     .todos__single {
