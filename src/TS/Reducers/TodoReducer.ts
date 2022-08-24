@@ -16,7 +16,7 @@
 //         return state.filter((todo) => todo.id !== action.payload);
 //     case "done" :
 //         return state.map((todo) => 
-//             todo.id !== action.payload ? { ...todo, isDone: !todo}
+//             todo.id !== action.payload ? { ...todo, isDone: !todo} : 
 //         );   
 //     default:
 //         return state;

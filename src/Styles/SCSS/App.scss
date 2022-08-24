@@ -1,20 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
-
-//Global Color Scheme
-$react-blue: #282c34;
-$white: white;
-$black: black;
-
-
+@import './Colors.scss';
 
 .App {
   text-align: center;
   background-color: $react-blue;
   min-height: 100vh;
-  display: flex;
+  //display: flex;
+  width: 100vw;
   flex-direction: column;
   align-items: center;
-  justify-content: Start;
+  //justify-content: Start;
   color: white;
   padding: 40px 20px 30px 20px;
 }
@@ -22,6 +17,22 @@ $black: black;
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+button.back-button {
+  position: absolute;
+  left: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: $github-dark-blue;
+  border: none;
+  color: $white;
+  font-weight: 600;
+}
+
+button.back-button:hover {
+  background-color: $github-light-blue;
+  cursor: pointer;
 }
 
 header {
